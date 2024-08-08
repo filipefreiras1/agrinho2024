@@ -294,7 +294,7 @@ nav a {
 }
 
 .imagem-container {
-    flex: 0 0 300px;
+    flex: 0 0 150px;
     scroll-snap-align: end;
     position: relative;
     overflow: hidden;
