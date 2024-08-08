@@ -1,0 +1,597 @@
+/* Variáveis */
+:root {
+    --cor-texto-branco: #fff;
+    --cor-texto-marrom: #995A1F;
+    --cor-texto-verde: #7cc622;
+    --cor-fundo-verde: rgb(110, 153, 57);
+    --cor-fundo-marrom: rgba(131, 77, 27, 0.915);
+    --cor-botao-verde: #5E8330;
+    --cor-menu: #929090;
+    --cor-home: #6E9939;
+    --cor-opacidade-cabecalho: 85%;
+    --cor-opacidade-secao-cabecalho: 70%;
+    --padding-secao: 60px 0;
+    --box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.264);
+    --box-shadow-secao: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    --font-size-paragrafo: 18px;
+    --font-size-h4: 22px;
+    --font-size-mobile-h1: 22px;
+    --font-size-mobile-h2: 20px;
+    --font-size-mobile-h4: 18px;
+    --font-size-mobile-paragrafo: 16px;
+    --font-size-mobile-subtitulo: 16px;
+    --width-logotipo: 96px;
+    --width-logotipo-mobile: 66px;
+    --width-icone-seta: 42px;
+}
+
+/* ESTILOS UNIVERSAIS */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    color: var(--cor-texto-branco);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* ESTILOS AGRUPADOS INICIO */
+.secao-botoes a,
+nav a,
+.secao-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    text-decoration: none;
+}
+
+p,
+ul li,
+ol li,
+label {
+    list-style-type: none;
+    font-size: var(--font-size-paragrafo);
+    font-weight: bold;
+}
+
+.texto-marrom {
+    color: var(--cor-texto-marrom);
+}
+
+.texto-verde {
+    color: var(--cor-texto-verde);
+}
+
+nav h2,
+.introducao h4,
+.objetivos h4,
+.secao-controle h4,
+.secao-prevencao h4 {
+    margin-top: 50px;
+    width: 100%;
+}
+
+nav,
+.introducao,
+.secao-info,
+.secao-introducao-ia,
+footer,
+.obj1,
+.obj2,
+.formulario {
+    background: var(--cor-fundo-verde);
+}
+
+nav,
+.secao-descricao,
+.titulo-e-subtitulo,
+.secao-titulos,
+.introducao,
+.secao-introducao-ia,
+.rodape,
+.secao-vertentes,
+.objetivos,
+.secao-controle,
+.secao-prevencao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introducao p,
+.secao-introducao-ia p,
+.objetivos p {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 62%;
+    line-height: 32px;
+}
+
+.secao-info,
+.rodape,
+.secao-vertentes,
+.obj2,
+.secao-manejo {
+    padding: var(--padding-secao);
+    box-shadow: var(--box-shadow);
+}
+
+/* FIM DOS ESTILOS AGRUPADOS */
+
+/* CABEÇALHO */
+header {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    opacity: var(--cor-opacidade-cabecalho);
+}
+
+#home {
+    background-image: url(img/fundo-cabeçalho1.jpg);
+}
+
+#agricultura {
+    background-image: url(img/fundo-cabecalho2.jpg);
+}
+
+#ia-agricultura {
+    background-image: url(img/fundo-cabecalho3.jpg);
+}
+
+#cultivo {
+    background-image: url(img/fundo-cabecalho4.jpg);
+}
+
+#repositorio {
+    background-image: url(img/fundo-cabecalho5.jpg);
+}
+
+#contato {
+    background-image: url(img/fundo-cabecalho6.jpg);
+}
+
+.secao-cabecalho {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: var(--cor-opacidade-secao-cabecalho);
+}
+
+/* TOPO */
+.secao-botoes a {
+    height: 48px;
+    border-radius: 52px;
+    margin: 0 10px;
+}
+
+.menu {
+    background-color: var(--cor-menu);
+}
+
+.home {
+    background-color: var(--cor-home);
+}
+
+.secao-botoes a p {
+    width: 100%;
+    height: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.secao-topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: rgba(248, 242, 242, 0.445);
+    z-index: 1000;
+}
+
+.logotipo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logotipo img {
+    width: var(--width-logotipo);
+}
+
+.icone-seta img {
+    width: var(--width-icone-seta);
+}
+
+.secao-botoes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* SEÇÃO TÍTULOS */
+h4 {
+    font-size: var(--font-size-h4);
+}
+
+.secao-titulos {
+    height: 100%;
+}
+
+.titulo-e-subtitulo {
+    justify-content: space-between;
+    max-height: 258px;
+    margin: 70px 0 126px 0;
+    padding-top: 50px;
+}
+
+.secao-descricao {
+    justify-content: space-between;
+    height: 30%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav {
+    justify-content: center;
+    padding: 10px 0;
+    gap: 52px;
+    box-shadow: var(--box-shadow-secao);
+    width: 100%;
+}
+
+nav a {
+    width: 100%;
+    height: 45px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 31px;
+    align-self: stretch;
+    margin: 20px 0;
+}
+
+/* fundo marrom */
+.botao-marrom,
+.secao-vertentes,
+.funcionamento-ia {
+    background: var(--cor-fundo-marrom);
+}
+
+.botao-verde {
+    background: var(--cor-botao-verde);
+}
+
+/* FIM MENU DE NAVEGAÇÃO */
+
+/* SEÇÃO INTRODUÇÃO - INICIO */
+
+/* SEÇÃO GALERIA */
+.container-galeria {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 18px;
+    background-color: var(--cor-botao-verde);
+    box-shadow: var(--box-shadow);
+}
+
+.imagem-container {
+    flex: 0 0 300px;
+    scroll-snap-align: end;
+    position: relative;
+}
+
+.imagem-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: 0;
+}
+
+.imagem {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    opacity: 50%;
+}
+
+.imagem1 {
+    background-image: url(img/galeria1\ img1.jpg);
+}
+
+.imagem2 {
+    background-image: url(img/galeria1\ img2.jpg);
+}
+
+.imagem3 {
+    background-image: url(img/galeria1\ img3.jpg);
+}
+
+.imagem4 {
+    background-image: url(img/galeria1\ img4.jpg);
+}
+
+.imagem5 {
+    background-image: url(img/galeria1\ img5.jpg);
+}
+
+.imagem6 {
+    background-image: url(img/galeria2\ imagem1.jpg);
+}
+
+.imagem7 {
+    background-image: url(img/galeria2\ imagem2.jpg);
+}
+
+.imagem8 {
+    background-image: url(img/galeria2\ imagem3.jpg);
+}
+
+.imagem9 {
+    background-image: url(img/galeria2\ imagem\ 4.png);
+}
+
+.imagem10 {
+    background-image: url(img/galeria2\ imagem\ 5.png);
+}
+
+.imagem11 {
+    background-image: url(img/galeria3\ imagem1.png);
+}
+
+.imagem12 {
+    background-image: url(img/galeria3\ imagem2.png);
+}
+
+.imagem13 {
+    background-image: url(img/galeria3\ imagem3.png);
+}
+
+.imagem14 {
+    background-image: url(img/galeria3\ imagem4.png);
+}
+
+.imagem15 {
+    background-image: url(img/galeria3\ imagem5.png);
+}
+
+.imagem16 {
+    background-image: url(img/galeria3\ imagem6.png);
+}
+
+.imagem17 {
+    background-image: url(img/galeria3\ imagem7.png);
+}
+
+.imagem18 {
+    background-image: url(img/galeria3\ imagem8.png);
+}
+
+/* SEÇÃO FUNCIONAMENTO IA */
+.funcionamento-ia p {
+    margin-top: 50px;
+    max-width: 90%;
+    line-height: 32px;
+}
+
+/* SEÇÃO VERTENTES */
+.secao-vertentes {
+    margin-top: 100px;
+    max-height: 385px;
+}
+
+.vertentes {
+    max-width: 90%;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.vertentes img {
+    border-radius: 50%;
+    height: 72px;
+    width: 72px;
+    margin: 20px;
+}
+
+.vertentes p {
+    font-size: var(--font-size-paragrafo);
+    font-weight: 400;
+}
+
+/* SEÇÃO OBJETIVOS */
+.objetivos h4 {
+    margin-bottom: 20px;
+}
+
+.objetivos p {
+    text-align: left;
+}
+
+/* SEÇÃO CONTROLE */
+.secao-controle {
+    padding: var(--padding-secao);
+}
+
+/* SEÇÃO PREVENÇÃO */
+.secao-prevencao {
+    padding: var(--padding-secao);
+}
+
+/* FORMULÁRIO */
+.formulario {
+    padding: 30px 0;
+    gap: 24px;
+}
+
+.formulario label {
+    margin-bottom: 10px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input,
+textarea,
+button {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    box-shadow: var(--box-shadow);
+}
+
+button {
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: var(--cor-botao-verde);
+}
+
+textarea {
+    height: 150px;
+}
+
+.input-container input,
+.input-container textarea {
+    flex: 1;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+}
+
+/* RODAPÉ */
+.rodape {
+    padding: 30px 0;
+    background-color: var(--cor-botao-verde);
+}
+
+/* Media Queries */
+@media (max-width: 1000px) {
+    .imagem-container {
+        flex: 0 0 250px;
+    }
+
+    .formulario label,
+    .formulario input,
+    .formulario textarea,
+    .formulario button {
+        width: 80%;
+    }
+
+    input,
+    textarea,
+    button {
+        width: 80%;
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .imagem-container {
+        flex: 0 0 200px;
+    }
+
+    nav h2,
+    .introducao h4,
+    .objetivos h4,
+    .secao-controle h4,
+    .secao-prevencao h4 {
+        font-size: var(--font-size-mobile-h1);
+    }
+
+    h4 {
+        font-size: var(--font-size-mobile-h4);
+    }
+
+    .secao-descricao p,
+    .secao-introducao-ia p,
+    .secao-controle p,
+    .secao-prevencao p {
+        font-size: var(--font-size-mobile-paragrafo);
+    }
+
+    .formulario label,
+    .formulario input,
+    .formulario textarea,
+    .formulario button {
+        font-size: var(--font-size-mobile-paragrafo);
+        width: 100%;
+    }
+
+    .logotipo img {
+        width: var(--width-logotipo-mobile);
+    }
+
+    .titulo-e-subtitulo {
+        max-height: 200px;
+        margin: 50px 0 100px 0;
+        padding-top: 30px;
+    }
+
+    .imagem {
+        height: 150px;
+    }
+
+    p,
+    ul li,
+    ol li {
+        font-size: var(--font-size-mobile-paragrafo);
+
+    }
+
+    .secao-titulos {
+        height: 100%;
+    }
+
+    .icone-seta img {
+        width: 30px;
+    }
+
+    .imagem-container {
+        flex: 0 0 150px;
+    }
+
+    .vertentes img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .vertentes p {
+        font-size: var(--font-size-mobile-paragrafo);
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
+}
