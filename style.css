@@ -595,3 +595,31 @@ textarea {
         flex-direction: column;
     }
 }
+
+/* Ajuste para garantir que o background-size e o background-position sejam aplicados */
+header {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    opacity: var(--cor-opacidade-cabecalho);
+    background-repeat: no-repeat; /* Adiciona esta linha para evitar repetição da imagem */
+}
+
+/* Garantir que as imagens de fundo sejam aplicadas corretamente */
+#home, #agricultura, #ia-agricultura, #cultivo, #repositorio, #contato {
+    background-size: cover; /* Garante que a imagem cubra toda a área */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Seção galeria - Garantir que as imagens sejam aplicadas corretamente */
+.imagem {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Adiciona esta linha para evitar repetição da imagem */
+    opacity: 50%;
+}
+
