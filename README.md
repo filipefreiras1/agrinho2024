@@ -5,10 +5,12 @@ Bem-vindo ao nosso site! Aqui estão algumas dicas para ajudá-lo a navegar e ap
 Navegação pelo Menu:
 
 Menu Principal: Use o menu de navegação no topo da página para acessar as principais seções do site, como Inteligência Artificial na Agricultura, Cultivos Otimizados, e Referências.
+
 Ícones de Navegação: Os ícones de seta indicam opções de expansão ou detalhes adicionais. Clique neles para explorar mais informações.
 Exploração de Conteúdo:
 
 Seção Introdução: Conheça a importância da agricultura ecológica e seus benefícios na seção de introdução. Navegue pelos diferentes tópicos e descubra como a Inteligência Artificial está transformando a agricultura.
+
 Galerias de Imagens: Nossas galerias de imagens ilustram aspectos chave da agricultura sustentável e o impacto das Inteligências Artificiais. Clique nas imagens para ver detalhes e informações adicionais.
 Interatividade:
 
