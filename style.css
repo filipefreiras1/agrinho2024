@@ -297,6 +297,7 @@ nav a {
     flex: 0 0 300px;
     scroll-snap-align: end;
     position: relative;
+    overflow: hidden;
 }
 
 .imagem-container::before {
@@ -316,6 +317,7 @@ nav a {
     background-size: cover;
     background-position: center;
     opacity: 50%;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .imagem1 {
@@ -358,240 +360,93 @@ nav a {
     background-image: url(img/galeria2\ imagem\ 5.png);
 }
 
-.imagem11 {
-    background-image: url(img/galeria3\ imagem1.png);
-}
+/* Outros ajustes de layout e espaçamento podem ser feitos aqui conforme necessário */
 
-.imagem12 {
-    background-image: url(img/galeria3\ imagem2.png);
-}
-
-.imagem13 {
-    background-image: url(img/galeria3\ imagem3.png);
-}
-
-.imagem14 {
-    background-image: url(img/galeria3\ imagem4.png);
-}
-
-.imagem15 {
-    background-image: url(img/galeria3\ imagem5.png);
-}
-
-.imagem16 {
-    background-image: url(img/galeria3\ imagem6.png);
-}
-
-.imagem17 {
-    background-image: url(img/galeria3\ imagem7.png);
-}
-
-.imagem18 {
-    background-image: url(img/galeria3\ imagem8.png);
-}
-
-/* SEÇÃO FUNCIONAMENTO IA */
-.funcionamento-ia p {
-    margin-top: 50px;
-    max-width: 90%;
-    line-height: 32px;
-}
-
-/* SEÇÃO VERTENTES */
-.secao-vertentes {
-    margin-top: 100px;
-    max-height: 385px;
-}
-
-.vertentes {
-    max-width: 90%;
-    justify-content: center;
-    gap: 10px;
-    height: auto;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.vertentes img {
-    border-radius: 50%;
-    height: 72px;
-    width: 72px;
-    margin: 20px;
-}
-
-.vertentes p {
-    font-size: var(--font-size-paragrafo);
-    font-weight: 400;
-}
-
-/* SEÇÃO OBJETIVOS */
-.objetivos h4 {
-    margin-bottom: 20px;
-}
-
-.objetivos p {
-    text-align: left;
-}
-
-/* SEÇÃO CONTROLE */
-.secao-controle {
-    padding: var(--padding-secao);
-}
-
-/* SEÇÃO PREVENÇÃO */
-.secao-prevencao {
-    padding: var(--padding-secao);
-}
-
-/* FORMULÁRIO */
-.formulario {
-    padding: 30px 0;
-    gap: 24px;
-}
-
-.formulario label {
-    margin-bottom: 10px;
-}
-
-.input-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-input,
-textarea,
-button {
-    width: 400px;
-    height: 40px;
-    padding: 10px;
-    border: none;
-    box-shadow: var(--box-shadow);
-}
-
-button {
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 20px;
-    background-color: var(--cor-botao-verde);
-}
-
-textarea {
-    height: 150px;
-}
-
-.input-container input,
-.input-container textarea {
-    flex: 1;
-    box-shadow: var(--box-shadow);
-    border-radius: 8px;
-}
-
-/* RODAPÉ */
-.rodape {
-    padding: 30px 0;
-    background-color: var(--cor-botao-verde);
-}
-
-/* Media Queries */
-@media (max-width: 1000px) {
-    .imagem-container {
-        flex: 0 0 250px;
+/* Estilos de responsividade */
+@media screen and (max-width: 700px) {
+    p,
+    label {
+        font-size: var(--font-size-mobile-paragrafo);
     }
 
-    .formulario label,
-    .formulario input,
-    .formulario textarea,
-    .formulario button {
-        width: 80%;
-    }
-
-    input,
-    textarea,
-    button {
-        width: 80%;
-    }
-
-    .input-container {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 600px) {
-    .imagem-container {
-        flex: 0 0 200px;
-    }
-
-    nav h2,
-    .introducao h4,
-    .objetivos h4,
-    .secao-controle h4,
-    .secao-prevencao h4 {
+    h1 {
         font-size: var(--font-size-mobile-h1);
+    }
+
+    h2 {
+        font-size: var(--font-size-mobile-h2);
     }
 
     h4 {
         font-size: var(--font-size-mobile-h4);
     }
 
-    .secao-descricao p,
-    .secao-introducao-ia p,
-    .secao-controle p,
-    .secao-prevencao p {
-        font-size: var(--font-size-mobile-paragrafo);
-    }
-
-    .formulario label,
-    .formulario input,
-    .formulario textarea,
-    .formulario button {
-        font-size: var(--font-size-mobile-paragrafo);
-        width: 100%;
+    .secao-topo {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
     }
 
     .logotipo img {
         width: var(--width-logotipo-mobile);
     }
 
-    .titulo-e-subtitulo {
-        max-height: 200px;
-        margin: 50px 0 100px 0;
+    .secao-botoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .secao-botoes a {
+        width: 100%;
+        height: 40px;
+        margin: 5px 0;
+    }
+
+    .secao-titulos {
+        margin: 50px 0;
         padding-top: 30px;
+    }
+
+    .titulo-e-subtitulo {
+        margin-bottom: 80px;
+    }
+
+    .secao-introducao-ia p,
+    .introducao p,
+    .objetivos p {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .imagem-container {
+        flex: 0 0 80%;
     }
 
     .imagem {
         height: 150px;
     }
 
-    p,
-    ul li,
-    ol li {
-        font-size: var(--font-size-mobile-paragrafo);
-
-    }
-
-    .secao-titulos {
-        height: 100%;
-    }
-
-    .icone-seta img {
-        width: 30px;
-    }
-
-    .imagem-container {
-        flex: 0 0 150px;
-    }
-
-    .vertentes img {
-        height: 60px;
-        width: 60px;
-    }
-
-    .vertentes p {
-        font-size: var(--font-size-mobile-paragrafo);
-    }
-
-    .input-container {
+    .secao-info {
         flex-direction: column;
+        padding: 20px 10px;
     }
+
+    .secao-info .imagem-container {
+        margin-bottom: 20px;
+    }
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* APLICANDO ANIMAÇÃO NAS IMAGENS DA GALERIA */
+.imagem {
+    animation: fadeIn 0.5s ease-in-out;
 }
